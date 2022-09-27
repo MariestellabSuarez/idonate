@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Home1</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="donation.php">Donations</a>
