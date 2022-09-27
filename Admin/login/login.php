@@ -11,7 +11,6 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
@@ -30,29 +29,40 @@
 					<img src="images/logo.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" method="POST" action="#" >
+				<form class="login100-form validate-form" method="POST" action="../include/login.inc.php" >
 					<span class="login100-form-title">
 						Staff Login
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+				
+						<input class="input100" type="text" name="userEmail" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
+					
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password">
+						<input class="input100" type="password" name="userPassword" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
-					
+					<span>
+						<?php 
+							if(isset($_GET['error'])){
+								if($_GET['error']=="wrongpassword"){
+									echo '<p class= "signuperror">*Your password is incorrect</p>';
+								}
+							}
+						
+						?></span>
 					<div class="container-login100-form-btn">
-						<input type="submit" name="submit" value="login" class="login100-form-btn">
+					<button type="submit" name="login-submit" class="login100-form-btn">Login</button>
+				
 					</div>
 
 					<div class="text-center p-t-12">
@@ -60,7 +70,7 @@
 							Forgot
 						</span>
 						<a class="txt2" href="#">
-							Username / Password?
+							Email / Password?
 						</a>
 					</div>
 
