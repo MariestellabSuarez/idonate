@@ -7,13 +7,14 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
-	<link rel="stylesheet" href="../Admin/css/landing.css">
+	<link rel="stylesheet" href="../Admin/css/add.css">
 
-	<title>Dashboard</title>
+	<title>Add Donations</title>
 </head>
 <body>
 
@@ -25,7 +26,7 @@ session_start();
 			<span ><img class="img" src="/Admin/img/logo.png" alt=""></span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li>
 				<a href="adminpage.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
@@ -43,8 +44,8 @@ session_start();
 					<span class="text">Requests</span>
 				</a>
 			</li>
-			<li>
-				<a href="addDonations.php">
+			<li class="active">
+				<a href="#">
 					<i class='bx bxs-add-to-queue' ></i>
 					<span class="text">Add Donations</span>
 				</a>
@@ -99,10 +100,10 @@ session_start();
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Dashboard</h1>
+					<h1>Add Donations</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="#">Donations</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
@@ -110,66 +111,58 @@ session_start();
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Download PDF</span>
-				</a>
 			</div>
-
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-					
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-					
-					</span>
-				</li>
-			</ul>
-
-
 			<div class="table-data">
 				<div class="order">
 					<div class="head">
-						<h3></h3>
+						<h3>Add Donations</h3>
 						<i class='bx bx-search' ></i>	
 						<i class='bx bx-filter' ></i>
 					</div>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th></th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="todo">
-					<div class="head">
-						<h3>Todos</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						
-					</ul>
-				</div>
+					<form action="" method="">
+						<div class="" data-validate = "">
+					
+						<input class="input100" type="text" name="fullname" placeholder="Full name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</div>
+						<div class="" data-validate = "">
+					
+						<input class="input100" type="text" name="address" placeholder="Address">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</div>
+						<div class="" data-validate = "">
+					
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</div>
+						<div class="" data-validate = "">
+					
+						<input class="input100" type="text" name="date" placeholder="Date">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</div>
+						<div class="" data-validate = "">
+					
+						<input class="input100" type="text" name="date" placeholder="Date">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						</div>
+
+					</form>
+				
 			</div>
 		</main>
 	
@@ -177,6 +170,6 @@ session_start();
 	
 	
 
-	<script src="../Admin/scripts/landing.js"></script>
+	<script src="../Admin/scripts/add.js"></script>
 </body>
 </html>
