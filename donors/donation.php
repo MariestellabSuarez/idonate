@@ -45,7 +45,7 @@
           <h2 class="con">Donate?</h2>
         </div>
         <div class = "parag">
-          <p>You can set request to inform the staff to<br>
+          <br> <p>You can set request to inform the staff to<br>
             your arrival and know what kind of donation<br> 
             you will donate. Or You can directly drop off<br>
             your donation to relief hub.</p>
